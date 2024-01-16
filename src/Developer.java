@@ -8,17 +8,14 @@ public class Developer extends Person{
     private double rating;
     private ArrayList<String> linksToOtherSites;
     private ArrayList<String> skills;
-    public Developer(String name, int age, String email, ArrayList<App> publishedApps,
-                     ArrayList<String> programmingLanguages, String resume, double rating,
-                     ArrayList<String> linksToOtherSites, ArrayList<String> skills, boolean developerStatus) {
+    public Developer(String name, int age, String email) {
         super(name, age, email);
-        this.publishedApps = publishedApps;
-        this.programmingLanguages = programmingLanguages;
-        this.resume = resume;
-        this.rating = rating;
-        this.linksToOtherSites = linksToOtherSites;
-        this.skills = skills;
-        this.developerStatus = developerStatus;
+        this.publishedApps = new ArrayList<>();
+        this.programmingLanguages = new ArrayList<>();
+        this.linksToOtherSites = new ArrayList<>();
+        this.skills = new ArrayList<>();
+        this.developerStatus = false;
+        this.rating = 0.0;
     }
     public ArrayList<App> getPublishedApps() {
         return publishedApps;
