@@ -1,11 +1,77 @@
 import java.util.ArrayList;
 
 public class Developer extends Person{
-    private ArrayList<App> PublishedApps;
-    private ArrayList<String> ProgrammingLanguages;
-    private String Resume;
-    private double Rating;
-    private ArrayList<String> LinksToOtherSites;
-    private ArrayList<String> Skills;
+    private ArrayList<App> publishedApps;
+    private boolean developerStatus;
+    private ArrayList<String> programmingLanguages;
+    private String resume;
+    private double rating;
+    private ArrayList<String> linksToOtherSites;
+    private ArrayList<String> skills;
+    public Developer(String name, int age, String email, ArrayList<App> publishedApps,
+                     ArrayList<String> programmingLanguages, String resume, double rating,
+                     ArrayList<String> linksToOtherSites, ArrayList<String> skills, boolean developerStatus) {
+        super(name, age, email);
+        this.publishedApps = publishedApps;
+        this.programmingLanguages = programmingLanguages;
+        this.resume = resume;
+        this.rating = rating;
+        this.linksToOtherSites = linksToOtherSites;
+        this.skills = skills;
+        this.developerStatus = developerStatus;
+    }
+    public ArrayList<App> getPublishedApps() {
+        return publishedApps;
+    }
 
+    public void setPublishedApps(ArrayList<App> publishedApps) {
+        this.publishedApps = publishedApps;
+    }
+
+    public ArrayList<String> getProgrammingLanguages() {
+        return programmingLanguages;
+    }
+
+    public void setProgrammingLanguages(ArrayList<String> programmingLanguages) {
+        this.programmingLanguages = programmingLanguages;
+    }
+
+    public String getResume() {
+        return resume;
+    }
+
+    public void setResume(String resume) {
+        this.resume = resume;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
+
+    public ArrayList<String> getLinksToOtherSites() {
+        return linksToOtherSites;
+    }
+
+    public void setLinksToOtherSites(ArrayList<String> linksToOtherSites) {
+        this.linksToOtherSites = linksToOtherSites;
+    }
+
+    public ArrayList<String> getSkills() {
+        return skills;
+    }
+
+    public void setSkills(ArrayList<String> skills) {
+        this.skills = skills;
+    }
+    public boolean isDeveloperStatus() {
+        return developerStatus;
+    }
+
+    public void setDeveloperStatus(boolean developerStatus) {
+        this.developerStatus = developerStatus;
+    }
 }

@@ -1,9 +1,10 @@
 public class Person {
-    private String FullName;
+    private String Name;
     private int age ;
-    private Gender gender;
-    private String Email;
-    private String UserName ;
-    private String PassWord;
-
+    private String email;
+    public Person(String Name, int Age ,String Email ){
+        this.age = Age;
+        this.Name = Name;
+        this.email = Email;
+    }
 }
