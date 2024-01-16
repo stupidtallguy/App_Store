@@ -16,6 +16,15 @@ public class Admin {
         appRequests.add(app);
     }
 
+    public static ArrayList<App> getAppRequests() {
+        return appRequests;
+    }
+
+    public ArrayList<Developer> getDeveloperRequests() {
+        return developerRequests;
+    }
+
+
     public void approveAppRequest(App app) {
         app.setReleaseAccess(true);
         appRequests.remove(app);
